@@ -1,0 +1,5 @@
+DEBUG = True
+FLATPAGES_ROOT = "posts"
+FLATPAGES_EXTENSION = ".md"
+STATIC_URL = "/static"
+POSTS_PER_PAGE = 6

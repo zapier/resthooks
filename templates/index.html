@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <meta name="author" content="REST Hooks" />
+    <meta name="keywords" content="Webhooks, REST, API, REST hooks, hooks" />
+    <meta name="robots" content="all" />
+    <meta name="viewport" content="width=device-width" />
+
+    <meta name="description" content="{% if post %}{{ post.caption }}{% else %}REST hooks are a lightweight subscription layer on top of your existing REST API. Powering the real time web.{% endif %}">
+    <title>{% if post and post.meta.title %}{{ post.meta.title }} | {% endif %}REST Hooks</title>
+
+    <link rel="icon" href="{{STATIC_URL}}/favicon.ico"/>
+    <link href="{{STATIC_URL}}/css/reset.css" rel="stylesheet" type="text/css"/>
+    <link href="{{STATIC_URL}}/css/font.css" rel="stylesheet" type="text/css"/>
+    <link href="{{STATIC_URL}}/css/common.css" rel="stylesheet" type="text/css"/>
+    <link href="{{STATIC_URL}}/css/pygments.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="{{STATIC_URL}}/js/jquery.js"></script>
+    <script type="text/javascript" src="{{STATIC_URL}}/js/underscore.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-27002928-3', 'resthooks.org');
+      ga('send', 'pageview');
+
+    </script>
+
+  </head>
+
+  <body>
+
+    <div class="content menu">
+
+      <a href="/">
+        <div class="logo hover">
+          <div class="rest">REST</div>
+          <div class="hooks">Hooks</div>
+        </div>
+      </a>
+
+      <a href="/">
+        <div class="item hover">
+          <i class="icon-globe"></i>
+          Why?
+        </div>
+      </a>
+
+      <a href="/">
+        <div class="item hover">
+          <i class="icon-code"></i>
+          Code
+        </div>
+      </a>
+
+      <a href="/">
+        <div class="item hover">
+          <i class="icon-play-sign"></i>
+          Docs
+        </div>
+      </a>
+
+    </div>
+
+    <div class="pop">
+      <div class="content">
+        <h1>Stop the polling madness.</h1>
+        <h2>REST hooks are a lightweight subscription layer on top of your existing REST API.</h2>
+        <a href="/">Read why</a> <span class="or">or</span> <a href="/">get started</a>.
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="left">
+        <h3>Peace, love and REST.</h3>
+        <p>You already embrace REST. But it isn't real-time and you shouldn't have to reinvent wheel to make it so. REST hooks are a natural, lightweight extension to what you're already familiar with.</p>
+        <a class="hover" href="/">Read more here.</a>
+      </div>
+      <div class="right">
+        <img src="http://placehold.it/285x285" />
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+    <hr />
+
+    <div class="content">
+      <div class="left">
+        <img src="http://placehold.it/285x285" />
+      </div>
+      <div class="right">
+        <h3>Happy developers.</h3>
+        <p>Polling is expensive and a headache. In fact, polling is over 100x more wasteful than notifying. And developers have to manage infrastructure to handle polling. REST hooks eliminate polling making your in-house developers and API consumers very happy.</p>
+        <a class="hover" href="/">Read more here.</a>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+    <hr />
+
+    <div class="content">
+      <div class="left">
+        <h3>Happy customers.</h3>
+        <p>The fun doesn't stop with developers. Real-time benefits trickle down from developers to customers. No longer will customers frustratingly wait minutes or hours for things to "sync". Everything happens immediately and on demand.</p>
+        <a class="hover" href="/">Read more here.</a>
+      </div>
+      <div class="right">
+        <img src="http://placehold.it/285x285" />
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,9 @@
+Flask==0.9
+Flask-FlatPages==0.3
+houdini.py==0.1.0
+Jinja2==2.6
+Markdown==2.2.0
+misaka==1.0.2
+pygments==1.6
+requests==0.14.0
+simplejson==2.6.2
