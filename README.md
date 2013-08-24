@@ -11,4 +11,4 @@ REST hooks are a lightweight subscription layer on top of your existing REST API
 
 For more information, code examples, libraries, and company profiles check out [http://resthooks.org](http://resthooks.org).
 
-REST hooks are an initiative by [Zapier](https://zapier.com).
+[http://resthooks.org](http://resthooks.org) an initiative by [Zapier](https://zapier.com) 2013.
