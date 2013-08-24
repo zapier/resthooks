@@ -37,50 +37,7 @@ GLOBAL_CONTEXT = {
 
 @app.route('/')
 def index():
-    return posts(page=1)
-
-@app.route('/<int:page>/')
-def page(page):
-    return posts(page)
-
-def posts(page=1, render=True):
-    """
-    Return a rendered template for a bunch of posts given a page offset
-    """
-    # live posts are pages with a draft=false or draft not set, always needs a date
-    posts = (p for p in pages if ('date' in p.meta and ('draft' in p.meta and p.meta['draft'] == False) or ('draft' not in p.meta)))
-
-    # show the 6 most recent articles, most recent first.
-    latest = sorted(posts, reverse=True,
-                    key=lambda p: p.meta['date'])
-
-    # grab only the posts we want
-    paginate = POSTS_PER_PAGE
-    start = ((page-1)*paginate)
-    end = start+paginate
-    posts = latest[start:end]
-
-    # set more and less page numbers where applicable
-    prev = next = None
-
-    if start > 0:
-        next = page-1
-
-    if len(latest) > end:
-        prev = page+1
-
-    # build captions
-    for post in posts:
-        post.caption = smart_truncate(render_markdown(post.body).striptags(), 120, '')
-
-    if render:
-        return render_template('index.html', posts=posts, prev=prev, next=next, **GLOBAL_CONTEXT)
-    else:
-        return {
-            'posts': posts,
-            'prev': prev,
-            'next': next
-        }
+    return render_template('index.html', **GLOBAL_CONTEXT)
 
 @app.route('/static/<path:filename>')
 def static(filename):
@@ -106,7 +63,7 @@ def post(slug):
         }
     else:
         post = None
-    return render_template('index.html', post=post, **GLOBAL_CONTEXT)
+    return render_template('post.html', post=post, **GLOBAL_CONTEXT)
 
 @app.route('/static/css/pygments.css')
 def pygments_css():

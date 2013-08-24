@@ -31,7 +31,7 @@
 
   </head>
 
-  <body>
+  <body class="post">
 
     <div class="content menu">
 
@@ -67,50 +67,30 @@
 
     <div class="pop">
       <div class="content">
-        <h1>Stop the polling madness.</h1>
-        <h2>REST hooks are a lightweight subscription layer on top of your existing REST API.</h2>
-        <a href="/">Read why</a> <span class="or">or</span> <a href="/">get started</a>.
+        <h1><a href="/{{ post.path }}">{{ post.meta.title }}</a></h1>
+        <h2>{{ post.meta.author}} &nbsp; - &nbsp; {{ post.meta.date.strftime('%b %-d %Y') }}</h2>
       </div>
     </div>
 
-    <div class="content">
-      <div class="left">
-        <h3>Peace, love and REST.</h3>
-        <p>You already embrace REST. But it isn't real-time and you shouldn't have to reinvent wheel to make it so. REST hooks are a natural, lightweight extension to what you're already familiar with.</p>
-        <a class="hover" href="/">Read more here.</a>
-      </div>
-      <div class="right">
-        <img src="http://placehold.it/265x265" />
-      </div>
-      <div class="clearfix"></div>
+    <div class="content post">
+      {{ post.content }}
     </div>
 
-    <hr />
-
     <div class="content">
-      <div class="right">
-        <h3>Happy developers.</h3>
-        <p>Polling is expensive, a headache and over 100x more wasteful than notifying. On top of that, developers have to manage infrastructure to handle polling. REST hooks eliminate polling making your in-house developers and API consumers very happy.</p>
-        <a class="hover" href="/">Read more here.</a>
-      </div>
-      <div class="left">
-        <img src="http://placehold.it/265x265" />
-      </div>
-      <div class="clearfix"></div>
-    </div>
 
-    <hr />
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_shortname = 'resthooks';
+        var disqus_title = '{{ post.meta.title }}';
+        var disqus_developer = 1;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-    <div class="content">
-      <div class="left">
-        <h3>Happy customers.</h3>
-        <p>The fun doesn't stop with developers. Real-time benefits trickle down from developers to customers. No longer will customers frustratingly wait minutes or hours for things to "sync". Everything happens immediately and on demand.</p>
-        <a class="hover" href="/">Read more here.</a>
-      </div>
-      <div class="right">
-        <img src="http://placehold.it/265x265" />
-      </div>
-      <div class="clearfix"></div>
     </div>
 
     <hr />

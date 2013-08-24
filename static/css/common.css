@@ -6,10 +6,9 @@ html {
 }
 
 body {
-  color: #0f1419;
+  color: #444;
   font-family: 'Droid Sans', sans-serif;
   margin: 0 auto;
-  min-width: 960px;
   height: 100%;
   position: relative;
 }
@@ -52,14 +51,14 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 1.5em;
   line-height: 1.2em;
   padding: 10px 0 0 0;
   margin-bottom: 25px;
 }
 
 h2 {
-  font-size: 1.6em;
+  font-size: 1.3em;
   line-height: 1.2em;
   padding: 10px 0 0 0;
   margin-bottom: 20px;
@@ -67,7 +66,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.3em;
+  font-size: 1.1em;
   line-height: 1.2em;
   padding: 10px 0 0 0;
   margin-bottom: 20px;
@@ -75,7 +74,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.3em;
+  font-size: 1.1em;
   line-height: 1.2em;
   padding: 10px 0 5px 0;
   margin-bottom: 15px;
@@ -84,8 +83,9 @@ h4 {
 }
 
 p {
+  color: #777;
   font-weight: 400;
-  font-size: 1.1em;
+  font-size: 0.9em;
   line-height: 2em;
   padding: 0;
   margin-bottom: 25px;
@@ -185,6 +185,18 @@ pre {
   overflow: auto;
   font-family: 'Envy Code R', 'Droid Sans Mono', 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Inconsolata, Consolas, monospace;
 }
+.content img, .content > iframe {
+  padding: 10px;
+  margin-left: -10px;
+  margin-right: -10px;
+  width: 100%;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3) inset, 0 0 20px rgba(0, 0, 0, 0.05) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3) inset, 0 0 20px rgba(0, 0, 0, 0.05) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3) inset, 0 0 20px rgba(0, 0, 0, 0.05) inset;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
 
 .menu {
   color: #666;
@@ -233,6 +245,7 @@ pre {
   background: #c23963;
   color: #ffb5cb;
   padding: 60px 0 80px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -243,11 +256,15 @@ pre {
 }
 .pop h2 {
   font-size: 14px;
+  line-height: 20px;
   letter-spacing: 1px;
   word-spacing: -1px;
   font-weight: normal;
 }
 .pop h1, .pop a {
+  color: #fefefe;
+}
+.pop a:hover {
   color: #fefefe;
 }
 .pop .or {
@@ -256,13 +273,27 @@ pre {
 }
 
 .content {
-  width: 650px;
+  max-width: 600px;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer {
+  color: #777;
+  text-align: center;
+  padding: 40px 0 70px;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.footer a {
+  color: #c23963;
 }
 
 hr {
   border-top: 1px solid #ddd;
-  width: 650px;
+  max-width: 650px;
   margin: 20px auto;
 }
 
@@ -297,4 +328,85 @@ hr {
 
 .left a, .right a {
   color: #c23963;
+}
+
+body.post .pop {
+  padding: 30px 0;
+}
+body.post .pop h1 {
+  margin-bottom: 0px;
+}
+body.post .pop h2 {
+  margin-bottom: 10px;
+}
+body.post .pop a {
+  text-decoration: none;
+  border: 0;
+}
+div.post {
+  padding: 40px 0;
+}
+div.post a {
+  color: #c23963;
+}
+
+.post table {
+  border: 1px solid #ccc;
+  background: #ebebeb;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  padding: 5px 5px 10px 5px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.post table, .post tr {
+  width: 100%;
+}
+.post table td {
+  width: 50%;
+  padding: 7px;
+  text-align: center;
+}
+.post table th {
+  padding: 10px;
+}
+.post table i {
+  color: #c23963;
+}
+
+@media screen and (max-width: 650px) {
+  .content, div.post {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .menu {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .menu a {
+    margin: 5px 0;
+  }
+  .menu a:first-child {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px
+  }
+  .menu .logo {
+    border-right: 0;
+    padding: 0;
+    margin: 0;
+  }
+  .menu .logo div {
+    display: inline;
+    font-size: 34px;
+    margin: 0 5px;
+  }
+  .left, .right {
+    float: none;
+    width: 100%;
+  }
+  hr {
+    max-width: 85%;
+  }
 }
