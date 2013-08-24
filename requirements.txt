@@ -7,4 +7,4 @@ misaka==1.0.2
 pygments==1.6
 requests==0.14.0
 simplejson==2.6.2
-gunicorn==0.17.5
+gunicorn==17.5
