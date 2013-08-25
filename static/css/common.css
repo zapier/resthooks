@@ -29,6 +29,10 @@ body {
   font-style: italic;
 }
 
+.center {
+  text-align: center;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -200,7 +204,7 @@ pre {
 
 .menu {
   color: #666;
-  padding: 60px 0 80px;
+  padding: 50px 0 70px;
   text-align: center;
 }
 
@@ -245,7 +249,7 @@ pre {
   background: #c23963;
   color: #ffb5cb;
   padding: 60px 0 80px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   text-align: center;
 }
 
@@ -272,6 +276,19 @@ pre {
   padding: 0 3px;
 }
 
+.index ul {
+  margin: 60px 20px;
+}
+.index ul li {
+  list-style-type: none;
+  font-weight: bold;
+  margin: 40px 0 20px;
+  line-height: 30px;
+}
+.index .content p {
+  font-size: 14px;
+}
+
 .content {
   max-width: 600px;
   margin: 0 auto;
@@ -294,7 +311,7 @@ pre {
 hr {
   border-top: 1px solid #ddd;
   max-width: 650px;
-  margin: 20px auto;
+  margin: 40px auto;
 }
 
 .left {
@@ -302,7 +319,7 @@ hr {
   -moz-box-sizing: border-box; /* Firefox */
   float: left;
   width: 50%;
-  padding: 40px 20px;
+  padding: 20px 20px;
 }
 
 .right {
@@ -310,7 +327,7 @@ hr {
   -moz-box-sizing: border-box; /* Firefox */
   float: right;
   width: 50%;
-  padding: 40px 20px;
+  padding: 20px 20px;
 }
 
 .left h3, .right h3 {
@@ -326,8 +343,28 @@ hr {
   font-size: 14px;
 }
 
-.left a, .right a {
+.left a, .right a, .index .content p a {
   color: #c23963;
+}
+
+.index .services {
+  text-align: center;
+}
+.index .services a {
+  font-size: 14px;
+}
+.index img {
+  display: block;
+  width: 80%;
+  border: 0;
+  background: none;
+  -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.3) inset, 0 0 0 rgba(0, 0, 0, 0.05) inset;
+  -moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.3) inset, 0 0 0 rgba(0, 0, 0, 0.05) inset;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.3) inset, 0 0 0 rgba(0, 0, 0, 0.05) inset;
+  margin: 10px auto;
+}
+.index .services .left, .index .services .right {
+  margin-bottom: 60px;
 }
 
 body.post .pop {

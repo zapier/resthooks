@@ -31,7 +31,7 @@
 
   </head>
 
-  <body>
+  <body class="index">
 
     <div class="content menu">
 
@@ -42,7 +42,7 @@
         </div>
       </a>
 
-      <a href="/">
+      <a href="#why">
         <div class="item hover">
           <i class="icon-globe"></i>
           Why?
@@ -67,50 +67,125 @@
 
     <div class="pop">
       <div class="content">
-        <h1>Stop the polling madness.</h1>
+        <h1>Reduce your REST API server load by 61x.</h1>
         <h2>REST hooks are a lightweight subscription layer on top of your existing REST API.</h2>
-        <a href="/">Read why</a> <span class="or">or</span> <a href="/">get started</a>.
+        <a href="/">Read how</a> <span class="or">or</span> <a href="/">get started</a>.
       </div>
     </div>
+
+    <div class="content">
+      <div class="left">
+        <h3>Stop the polling madness.</h3>
+        <p>With most modern REST APIs, polling is the only way to detect changes. But it doesn't have to be. On average, 98.5% of polls are wasted. There is a better way. REST hooks enable real-time communication and eliminate polling.</p>
+        <a class="hover" href="/">Read more here.</a>
+      </div>
+      <div class="right">
+        <img src="{{STATIC_URL}}/img/polling.png" />
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+    <hr />
+
+    <div class="content">
+      <div class="right">
+        <h3>Beyond webhooks.</h3>
+        <p>Webhooks are great but make for a terrible setup user experience. REST hooks are subscription based. Users should have to do little more than click a button to enable real-time updating.</p>
+        <a class="hover" href="/">Read more here.</a>
+      </div>
+      <div class="left">
+        <img src="{{STATIC_URL}}/img/webhooks.png" />
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+    <hr />
 
     <div class="content">
       <div class="left">
         <h3>Peace, love and REST.</h3>
-        <p>You already embrace REST. But it isn't real-time and you shouldn't have to reinvent wheel to make it so. REST hooks are a natural, lightweight extension to what you're already familiar with.</p>
+        <p>You already embrace REST. Why re-invent the wheel? REST hooks are a simple, lightweight extension to what you're already familiar with. No more pedantic arguments about standards and implementation details. Just a real solution that works.</p>
         <a class="hover" href="/">Read more here.</a>
       </div>
       <div class="right">
-        <img src="http://placehold.it/265x265" />
+        <img src="{{STATIC_URL}}/img/rest.png" />
       </div>
       <div class="clearfix"></div>
     </div>
 
-    <hr />
+    <a id="why"><hr /></a>
+
+    <div class="content center">
+      <h2 class="">The real-time web is here but REST APIs haven't kept up.</h2>
+      <p>Many major players have already begun standardizing on subscription webhooks.<br />REST hooks consolidate this momentum and push it to a broarder audience.</p>
+    </div>
 
     <div class="content">
-      <div class="right">
-        <h3>Happy developers.</h3>
-        <p>Polling is expensive, a headache and over 100x more wasteful than notifying. On top of that, developers have to manage infrastructure to handle polling. REST hooks eliminate polling making your in-house developers and API consumers very happy.</p>
-        <a class="hover" href="/">Read more here.</a>
-      </div>
-      <div class="left">
-        <img src="http://placehold.it/265x265" />
-      </div>
-      <div class="clearfix"></div>
+      <ul>
+        <li>1. REST hooks are 61x more efficient than traditional polling.</li>
+        <p><span class="bold">Case study:</span> <a href="https://zapier.com">Zapier</a> is a SaaS service which connects hundreds of other web apps together online. Polling is a necessecity because it is the most ubiquitous way to detect changes.</p>
+        <p>Over a representative time period, Zapier polled for changes <span class="bold">30 million</span> times but only took action 460,000 of those polls (1.5% efficient).</p>
+        <p>Contrast this with REST hooks, where 560,000 hooks were received over the same period and 504,000 were acted upon (98.5% efficient).</p>
+        <p>In other words, if everyone implemented REST hooks, Zapier would be able reduce server costs by 61x.</p>
+
+        <li>2. User conversion rates improved 24% with REST hooks.</li>
+        <p><span class="bold">Case study:</span> <a href="https://wufoo.com">Wufoo</a> is a popular survey product service which integrates with Zapier. Wufoo supports both classic webhooks (the user must copy and paste a URL from one app to the other) and REST hooks (the webhook is automatically created).</p>
+        <p>Users on Zapier tried to set up an integrations with Wufoo using classic webhooks and were successful 95 times out of 215 tries, a 44% conversation rate.</p>
+        <p>When users tried REST hooks, however, 261 of 477 were successful, a 54.7% conversion. REST hooks improved conversion rates by 24%.</p>
+        <p>With REST hooks, user experience is also greatly improved because users don't need to go offsite to set up an integration.</p>
+
+        <li>3. When asked, 90% of developers prefer hooks over polling.</li>
+        <p><span class="bold">Survey:</span> When a group of 100 developers were surveyed, 90% preferred to consume a 3rd party REST API by being notified of changes via webhooks instead of polling.</p>
+        <p>Polling requires developers to maintain state and infrastructure. There is such unanimous support for real-time change notifications because polling is very difficult and time intensive.</p>
+        <p>Developers can spend their time doing meaningful things with your REST API instead of fighting the idiosyncracies of polling.</p>
+      <ul>
+    </div>
+
+    <div class="content center">
+      <h3>REST hooks reduce server load, make devs happy, and improve conversion.</h3>
+      <p>Ready to learn how? <a href="/">Click to get started with REST hooks</a>.</p>
     </div>
 
     <hr />
 
-    <div class="content">
+    <div class="content services">
+
+      <h2 class="center bold">Who is using REST hooks today?</h2>
+
       <div class="left">
-        <h3>Happy customers.</h3>
-        <p>The fun doesn't stop with developers. Real-time benefits trickle down from developers to customers. No longer will customers frustratingly wait minutes or hours for things to "sync". Everything happens immediately and on demand.</p>
-        <a class="hover" href="/">Read more here.</a>
+        <a href="/"><img src="{{STATIC_URL}}/img/asana.png" /></a>
+        <a href="/">Learn how Asana uses REST hooks</a>
       </div>
       <div class="right">
-        <img src="http://placehold.it/265x265" />
+        <a href="/"><img src="{{STATIC_URL}}/img/wufoo.png" /></a>
+        <a href="/">Learn how Wufoo uses REST hooks</a>
+        </a>
       </div>
+
       <div class="clearfix"></div>
+
+      <div class="left">
+        <a href="/"><img src="{{STATIC_URL}}/img/shopify.png" /></a>
+        <a href="/">Learn how Shopify uses REST hooks</a>
+      </div>
+
+      <div class="right">
+        <a href="/"><img src="{{STATIC_URL}}/img/podio.png" /></a>
+        <a href="/">Learn how Podio uses REST hooks</a>
+      </div>
+
+      <div class="clearfix"></div>
+      <div class="left">
+        <a href="/"><img src="{{STATIC_URL}}/img/glass.png" /></a>
+        <a href="/">Learn how Glass uses REST hooks</a>
+        </a>
+      </div>
+      <div class="right">
+        <a href="/"><img src="{{STATIC_URL}}/img/stripe.png" /></a>
+        <a href="/">Learn how Stripe uses REST hooks</a>
+        </a>
+      </div>
+
     </div>
 
     <hr />
