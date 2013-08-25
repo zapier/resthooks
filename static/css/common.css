@@ -284,6 +284,7 @@ pre {
   font-weight: bold;
   margin: 40px 0 20px;
   line-height: 30px;
+  text-align: center;
 }
 .index .content p {
   font-size: 14px;
@@ -352,6 +353,7 @@ hr {
 }
 .index .services a {
   font-size: 14px;
+  line-height: 20px;
 }
 .index img {
   display: block;
