@@ -55,7 +55,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a {
 }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 1.7em;
   line-height: 1.2em;
   padding: 10px 0 0 0;
   margin-bottom: 25px;
@@ -374,6 +374,7 @@ body.post .pop {
 }
 body.post .pop h1 {
   margin-bottom: 0px;
+  font-size: 2.4em;
 }
 body.post .pop h2 {
   margin-bottom: 10px;
