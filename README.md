@@ -6,7 +6,7 @@
  | | \ \ | |____  ____) |   | |   | |  | || |__| || |__| || . \  ____) |_| |__| || | \ \ | |__| |
  |_|  \_\|______||_____/    |_|   |_|  |_| \____/  \____/ |_|\_\|_____/(_)\____/ |_|  \_\ \_____|
                                                                                                  
-```                                                               
+```
 
 REST hooks are a lightweight subscription layer on top of your existing REST API.
 
@@ -15,3 +15,28 @@ The real-time web is already here, but REST APIs haven't kept up. Many major pla
 For more information, code examples, libraries, and company profiles check out [http://resthooks.org](http://resthooks.org).
 
 [http://resthooks.org](http://resthooks.org) an initiative by [Zapier](https://zapier.com) 2013.
+
+
+## How to run locally.
+
+Clone the repo and hop into the correct directory.
+
+```
+git clone git@github.com:zapier/resthooks.git && cd resthooks
+```
+
+Next, you'll want to make a virtual environment (we recommend using
+virtualenvwrapper but you could skip this) and then install dependencies:
+
+```
+mkvirtualenv resthooks
+pip install -r requirements.txt
+```
+
+Now you can run the server!
+
+```
+foreman run web
+# or
+gunicorn resthooks:app
+```
