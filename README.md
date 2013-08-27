@@ -16,7 +16,6 @@ For more information, code examples, libraries, and company profiles check out [
 
 [http://resthooks.org](http://resthooks.org) an initiative by [Zapier](https://zapier.com) 2013.
 
-
 ## How to run locally.
 
 Clone the repo and hop into the correct directory.
@@ -38,5 +37,5 @@ Now you can run the server!
 ```
 foreman run web
 # or
-gunicorn resthooks:app
+python resthooks.py
 ```
