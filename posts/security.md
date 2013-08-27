@@ -23,13 +23,13 @@ Upon receiving the secret from the Sender, the Receiver needs to do one of two t
 
 Option 1 (Confirm secret immediately)
 
-![Subscription Handshake Diagram](/static/img/subscription_handshake_diagram.png)
+![Subscription Handshake Diagram]({{STATIC_URL}}/img/subscription_handshake_diagram.png)
 
 In this case, the Receiver returns a `200` response with the secret included in the `X-Hook-Secret` header.
 
 Option 2 (Delayed Confirmation)
 
-![Delayed Subscription Handshake Diagram](/static/img/subscription_handshake_delayed_diagram.png)
+![Delayed Subscription Handshake Diagram]({{STATIC_URL}}/img/subscription_handshake_delayed_diagram.png)
 
 In this case, the Receiver returns a `200` response without the secret, then later sends another request to the Sender with the secret in the header.
 
@@ -41,7 +41,7 @@ To prove the authenticity of subsequent messages, the Sender can use a shared se
 
 For each message, the Sender signs the message by computing an HMAC of the shared secret plus request body and placing the signature in the `X-Hook-Signature` header. The Receiver then verifies the signature to know that the message is authentic. Verification is as simple as computing the same HMAC and comparing it to the `X-Hook-Signature` header value.
 
-![Example Hook with Sender Signature](/static/img/hook_diagram.png)
+![Example Hook with Sender Signature]({{STATIC_URL}}/img/hook_diagram.png)
 
 ## Skinny Payloads
 
