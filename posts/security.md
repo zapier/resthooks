@@ -21,7 +21,7 @@ When the Sender responds to the Receiver’s first POST request, the response in
 
 Upon receiving the secret from the Sender, the Receiver needs to do one of two things:
 
-Option 1 (Confirm secret immediately)
+Option 1 (Immediate Confirmation)
 
 ![Subscription Handshake Diagram]({{STATIC_URL}}/img/subscription_handshake_diagram.png)
 
