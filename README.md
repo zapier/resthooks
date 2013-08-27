@@ -15,3 +15,8 @@ The real-time web is already here, but REST APIs haven't kept up. Many major pla
 For more information, code examples, libraries, and company profiles check out [http://resthooks.org](http://resthooks.org).
 
 [http://resthooks.org](http://resthooks.org) an initiative by [Zapier](https://zapier.com) 2013.
+
+**To run this repo locally:**
+
+1. Clone repo
+2. `python resthooks.py`
