@@ -1,5 +1,5 @@
 from flask import Flask, Markup, Response
-from flask import request, send_from_directory, render_template
+from flask import request, send_from_directory, render_template, render_template_string
 from flask_flatpages import pygments_style_defs
 app = Flask(__name__)
 app.config.from_pyfile('config.py')
@@ -54,7 +54,7 @@ def post(slug):
     """
     p = pages.get(slug)
     if p:
-        md = render_markdown(p.body)
+        md = render_markdown(render_template_string(p.body, **GLOBAL_CONTEXT))
         post = {
             'content': md,
             'meta': p.meta,
