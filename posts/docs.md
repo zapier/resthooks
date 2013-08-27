@@ -6,4 +6,6 @@ date: 2013-08-27
 
 [Security](/security)
 
+[Performance](/performance)
+
 [Alternatives](/alternatives)
