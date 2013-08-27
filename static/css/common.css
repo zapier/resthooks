@@ -123,12 +123,13 @@ blockquote:before {
 }
 
 ol, ul {
+  color: #777;
   font-weight: 400;
-  font-size: 1.1em;
-  line-height: 1.3em;
+  font-size: 0.9em;
+  line-height: 2em;
   padding: 0;
   margin-bottom: 25px;
-  margin-left: 25px;
+  margin-left: 20px;
   list-style: inherit;
 }
 ol {
@@ -136,7 +137,6 @@ ol {
 }
 ol li, ul li {
   list-style-position: outside;
-  margin-bottom: 5px;
 }
 
 hr {
@@ -193,6 +193,7 @@ pre {
   padding: 10px;
   margin-left: -10px;
   margin-right: -10px;
+  margin-bottom: 50px;
   width: 100%;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3) inset, 0 0 20px rgba(0, 0, 0, 0.05) inset;
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3) inset, 0 0 20px rgba(0, 0, 0, 0.05) inset;
@@ -278,6 +279,8 @@ pre {
 
 .index ul {
   margin: 60px 20px;
+  color: #444;
+  font-size: 1.1em;
 }
 .index ul li {
   list-style-type: none;

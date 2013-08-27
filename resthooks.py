@@ -61,9 +61,9 @@ def post(slug):
             'path': p.path,
             'caption': smart_truncate(md.striptags(), 120, '...'),
         }
+        return render_template('post.html', post=post, **GLOBAL_CONTEXT)
     else:
-        post = None
-    return render_template('post.html', post=post, **GLOBAL_CONTEXT)
+        return render_template('404.html', **GLOBAL_CONTEXT)
 
 @app.route('/static/css/pygments.css')
 def pygments_css():
