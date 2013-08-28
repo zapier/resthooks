@@ -403,6 +403,14 @@ div.post a {
   color: #c23963;
 }
 
+.post .quote {
+  color: #555;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0 20px 40px 20px;
+}
 .post table {
   border: 1px solid #ccc;
   background: #ebebeb;
@@ -410,7 +418,7 @@ div.post a {
   -webkit-border-radius: 4px;
   border-radius: 4px;
   padding: 5px 5px 10px 5px;
-  margin: 10px auto 50px auto;
+  margin: 50px auto;
   padding: 15px 25px;
 }
 .post table tr {
