@@ -1,6 +1,5 @@
-from flask import Flask, Markup, Response
+from flask import Flask, Markup
 from flask import request, send_from_directory, render_template, render_template_string
-from flask_flatpages import pygments_style_defs
 app = Flask(__name__)
 app.config.from_pyfile('config.py')
 
@@ -9,14 +8,7 @@ pages = FlatPages(app)
 
 import misaka
 import operator
-import random
-import simplejson
 import os
-import re
-import uuid
-import fileinput
-import requests
-import sys
 import houdini
 import datetime
 
