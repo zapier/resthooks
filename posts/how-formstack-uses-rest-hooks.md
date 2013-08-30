@@ -7,9 +7,12 @@ comments: false
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/vtHPK9k_UDk" frameborder="0" allowfullscreen></iframe>
 
-While refreshing their API to be more usable about a year ago, the Formstack team made sure to include REST Hooks support.  Not only did it provide a much better user experience for those consuming the API, but it also gave an outlet for them to reference for all the potential integrations users wanted, but Formstack did not have native support for.
+Formstack built their original API when their product launched but adoption was so-so and lots of developers were hitting rate-limits.
+
+While refreshing their API to be more usable about a year ago, the Formstack team made sure to include REST Hooks support. Not only did it provide a much better user experience for those consuming the API, but it also gave an outlet for users demanding more integrations.
 
 Even better, after adopting REST Hooks they saw a significant drop in the amount of server resources needed to power their API, giving them improved performance to go with the improved user experience.
+
 Let's take a look at how exactly Formstack uses REST hooks.
 
 <table>
@@ -31,11 +34,11 @@ Let's take a look at how exactly Formstack uses REST hooks.
   </tr>
   <tr>
     <td><a href="/">Identity verification</a> <i class="icon-shield" title="Security feature"></i></td>
-    <td></td>
+    <td><i class="icon-check-sign"></i></td>
   </tr>
   <tr>
     <td><a href="/">Skinny payloads</a> <i class="icon-shield" title="Security feature"></i></td>
-    <td></td>
+    <td><i class="icon-check-sign"></i></td>
   </tr>
   <tr>
     <td><a href="/">Retries</a></td>
@@ -47,30 +50,21 @@ Let's take a look at how exactly Formstack uses REST hooks.
   </tr>
   <tr>
     <td><a href="/">Order of delivery</a></td>
-    <td></td>
+    <td><i class="icon-check-sign"></i></td>
   </tr>
 </table>
 
 ## REST Hooks
 
-ActiveCampaign's REST API supports several methods for interacting with webhooks. They offer an endpoint to create, list, delete, and review specific hooks. Hooks can be triggered <a href="http://www.activecampaign.com/api/webhooks.php">by several things</a> including:
+Formstack is a classic example of REST hooks. They have a REST componenet to subscibe, access and unsubscribe from hooks. Addionally, they offer many toggles which can be used to make REST hooks more secure from the receiver's point of view.
 
-1. Changes to a contact (subscribe, bounce, etc.)
-2. Changes by an admin user (adding a contact manually)
-3. Events by the system (automated emails, etc.)
-4. Events through the API (adding a contact via the API)
+## Identity Verification
 
-## Fat Payloads
+Formstack uses a handshake key to identify they are a verified sender. This handshake key is set up specified by the receiver when the subscription is set up for the first time.
 
-ActiveCampaign sends all their hooks over the wire with full API responses, meaning you do not need to perform another API call in order to get usable data.
+## Skinny Payloads
 
-## Retries
-
-While ActiveCampaign's API does not retry failed hooks, they will store a delivered status which you can request specifically by hitting their hook list endpoint. This could be used to periodically verify you've received all hooks or to access old hooks.
-
-## Inline Unsubscribe
-
-If your hook endpoint returns a `410` response, then ActiveCampaign will automatically delete and clean-up the hook for you.
+Formstack requires you to specify wether you'd like skinny or fat payloads when you subscribe to receive hooks. You can send along a true of false value for `append_data` when subscribing.
 
 ## Formstack Resources
 
@@ -78,6 +72,6 @@ If your hook endpoint returns a `410` response, then ActiveCampaign will automat
 [API Documentation](https://www.formstack.com/developers/api)  
 [REST Hooks Documentation](https://www.formstack.com/developers/webhooks)  
 
-## About ActiveCampaign
+## About Formstack
 
 Formstack is an Online HTML Form Builder that lets you create all types of online forms. Build order forms, contact forms, registration forms, & online surveys.
