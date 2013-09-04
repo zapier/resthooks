@@ -2,9 +2,14 @@ title: Alternatives
 author: Zapier
 date: 2013-08-27
 
+
+### [Home](/) > [Docs](/docs/) > {{ title }}
+
+
 When it comes to real time communication, the collection of patterns surrounding REST Hooks do not stand alone. There are other options, many of them quite mature and are in production across a handful of vendors. 
 
-### Long-polling or Comet
+
+## Long-polling or Comet
 
 Long-polling is a bit of a clever hack on normal polling. It is more efficient than repeatedly asking "any new data? any new data?" every couple minutes with a brand new GET request because it just leaves the first GET request open until there is new data. After receiving that new data and closing the original connection, the client initiates another connection for the next bit of information.
 
@@ -15,7 +20,7 @@ Comet is a loose collection of patterns around long-polling and other browser wo
 The use of long-polling and Comet is discouraged, existing implementations at Facebook, Twitter and elsewhere are already deprecated and pending removal.
 
 
-### Websockets
+## Websockets
 
 Websockets are extremely flexible and create a persistent connection ready for full two way communication. They are fairly lightweight and have mature libraries in most languages.
 
@@ -26,13 +31,15 @@ Websockets also require a minimum level of resources at scale. Websocket connect
 Websockets and similar constructs are wonderful for APIs where real-time is business critical (perhaps for real-time stock updates), websockets are the best choice. For the average CRUD style web application, webhooks are a more natural way to approximate less chatty communications.
 
 
-### Classic webhooks
+## Classic webhooks
 
 Classic, or user managed, webhooks get closer to the ideal event notification system. The server POSTs a payload to some user defined URL. There is almost zero overhead on the client side; they just handle the POST requests like normal.
 
 Webhooks reuse tons of existing architecture: all notifications are HTTP based and most web services have quite a bit of expertise making and handling such requests. However, they have one big drawback: they are a very poor experience for the user. Copy-pasting obscure URLs between two services' settings pages is a major hurdle.
 
-### XMPP
+
+## XMPP
+
 The Extensible Messaging and Presence Protocol (XMPP) is one popular protocol that while originally developed and used as part of jabber for chat-based applications, it is also used for bidirectional communication between servers. The binding method, [Bidirectional-streams Over Synchronous HTTP (BOSH)](http://xmpp.org/extensions/xep-0124.html), allows for messages to be pushed to subscribers as soon as they become available by emulating persistent, long lived connections while under the hood they still use HTTP polling but in an optimized manner. 
 
 Messages sent between XMPP aware nodes are in xml although they may additionally include different data formats embedded within them (such is the case with the `<json:json>` node). A major strength that users gain by using XMPP is that they can rely on its long history and well defined open standard when building XMPP aware applications. This also means several good libraries exist for it and consumer applications that may not have a public address or are behind a firewall can still communicate with other servers.
@@ -40,7 +47,7 @@ Messages sent between XMPP aware nodes are in xml although they may additionally
 On the downside, users might be a little overwhelmed with the complexities involved with implementing the specification and may find the protocol, while lightweight, simply not well suited to their needs. Also, unlike REST Hooks where HTTP traffic only occurs when notifications are sent, XMPP has ongoing traffic to maintain the connection (albeit lightweight).
 
 
-### New protocol or specification
+## New protocol or specification
 
 There have been proposals for extending the HTTP specification itself with SUBSCRIBE and UNSUBSCRIBE methods (via WebDAV). Partially due to the fact that it wasn’t adopted into the core specifications, they have not caught on and only a handful of services implement it. Unfortunately, the red tape and bureaucracy involved to officially include subscription HTTP methods are prohibitive.
 

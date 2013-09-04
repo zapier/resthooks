@@ -2,6 +2,9 @@ title: Performance
 author: Zapier
 date: 2013-08-27
 
+
+### [Home](/) > [Docs](/docs/) > {{ title }}
+
 Properly implemented and adopted, REST Hooks can result in ~66x load reduction on API servers (based on comparing polling vs. webhook implementations within Zapier).
 
 However, the architecture required to run REST Hooks can break away from a standard setup for a simple CRUD app, which can have only HTTP and database servers. This article will cover basic patterns to work within this architecture and ways to extend architecture to better suit hook delivery.

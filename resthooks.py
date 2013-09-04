@@ -52,11 +52,11 @@ def post(slug):
     """
     Render a single post to the screen by slug `post` or 404
     """
-    print slug
     p = pages.get(slug)
-    print pages._pages
     if p:
-        md = render_markdown(render_template_string(p.body, **GLOBAL_CONTEXT))
+        context = GLOBAL_CONTEXT.copy()
+        context.update(p.meta)
+        md = render_markdown(render_template_string(p.body, **context))
         post = {
             'content': md,
             'meta': p.meta,

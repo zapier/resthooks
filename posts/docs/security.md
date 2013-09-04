@@ -3,6 +3,8 @@ author: Zapier
 date: 2013-08-27
 
 
+### [Home](/) > [Docs](/docs/) > {{ title }}
+
 ## Use Existing API Authentication
 
 The first step to a secure REST Hook implementation is the make use of the existing authentication mechanism for the Sender’s API. When setting up the subscription, the API calls to do the handshake should include the standard authentication mechanism (Basic Auth, API key, OAuth access token, etc...).
