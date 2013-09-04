@@ -75,6 +75,6 @@ Now that you have the all the other pieces in place, the only thing left to do i
 1. Compiling and POSTing the combined payload for the triggering resource and hook resource.
 2. Handling responses like 410 Gone and optionally retrying connection or other 4xx/5xx errors. 
 
-We generally recommend some sort of delayed task implementation (we detail more [performance considerations here](todo)) but in its simplest form inline hook delivery will get the job done.
+We generally recommend some sort of delayed task implementation (we detail more [performance considerations here](/docs/performance/)) but in its simplest form inline hook delivery will get the job done.
 
 # Further Topical Readings

@@ -5,7 +5,6 @@ date: 2013-08-27
 
 ### [Home](/) > [Docs](/docs/) > {{ title }}
 
-
 When it comes to real time communication, the collection of patterns surrounding REST Hooks do not stand alone. There are other options, many of them quite mature and are in production across a handful of vendors. 
 
 
