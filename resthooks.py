@@ -1,7 +1,15 @@
 from flask import Flask, Markup
 from flask import request, send_from_directory, render_template, render_template_string
+from werkzeug.routing import BaseConverter
+
+class RegexConverter(BaseConverter):
+    def __init__(self, url_map, *items):
+        super(RegexConverter, self).__init__(url_map)
+        self.regex = items[0]
+
 app = Flask(__name__)
 app.config.from_pyfile('config.py')
+app.url_map.converters['regex'] = RegexConverter
 
 from flask_flatpages import FlatPages
 pages = FlatPages(app)
@@ -39,12 +47,14 @@ def static(filename):
 def favicon():
     return send_from_directory(ROOT + app.config['STATIC_URL'], 'favicon.ico')
 
-@app.route('/<slug>/')
+@app.route('/<regex("[-a-zA-z0-9/]+"):slug>/')
 def post(slug):
     """
     Render a single post to the screen by slug `post` or 404
     """
+    print slug
     p = pages.get(slug)
+    print pages._pages
     if p:
         md = render_markdown(render_template_string(p.body, **GLOBAL_CONTEXT))
         post = {

@@ -21,13 +21,13 @@ When the Sender responds to the Receiver’s first POST request, the response in
 
 Upon receiving the secret from the Sender, the Receiver needs to do one of two things:
 
-Option 1 (Immediate Confirmation)
+### Option 1 (Immediate Confirmation)
 
 ![Subscription Handshake Diagram]({{STATIC_URL}}/img/subscription_handshake_diagram.png)
 
 In this case, the Receiver returns a `200` response with the secret included in the `X-Hook-Secret` header.
 
-Option 2 (Delayed Confirmation)
+### Option 2 (Delayed Confirmation)
 
 ![Delayed Subscription Handshake Diagram]({{STATIC_URL}}/img/subscription_handshake_delayed_diagram.png)
 

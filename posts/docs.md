@@ -4,9 +4,9 @@ date: 2013-08-27
 
 ## Links
 
-1. [Security Best Practices](/security) various patterns for ensuring that intent and identity are maintained.
-2. [Performance Best Practices](/performance) various patterns for ensuring your servers stay performant.
-3. [Alternatives To REST Hooks](/alternatives) other real-time patterns in use around the web.
+1. [Security Best Practices](/docs/security/) patterns to verify intent and identity for hooks.
+2. [Performance Best Practices](/docs/performance/) patterns for ensure your code is performant.
+3. [Alternatives To REST Hooks](/docs/alternatives/) other real-time patterns in use around the web.
 
 
 ## What are REST Hooks? What are they not?
@@ -43,11 +43,13 @@ It is wise to make sure you index both the event and user relationship so subscr
 
 Also dependent on your API implementation, this allows anyone with normal API access to manipulate their subscriptions like any other resource on your API. For example, if you already have a REST API, the most common and logical solution is another resource:
 
-* GET           /api/v1/subscription/       list subscriptions
-* POST      /api/v1/subscription/       create a subscription
-* GET           /api/v1/subscription/:id/   get a subscription
-* PUT           /api/v1/subscription/:id/   update a subscription
-* DELETE        /api/v1/subscription/:id/   delete a subscription
+Method  | Route                         | About
+--------|-------------------------------|----------------------
+GET     | /api/v1/subscription/         | list subscriptions
+POST    | /api/v1/subscription/         | create a subscription
+GET     | /api/v1/subscription/:id/     | get a subscription
+PUT     | /api/v1/subscription/:id/     | update a subscription
+DELETE  | /api/v1/subscription/:id/     | delete a subscription
 
 These would simply manipulate the resources like any other REST endpoint, but with the added benefit that subscriptions have one side effect: their existence will cause webhooks be sent to the target URL when an event happens for that account.
 

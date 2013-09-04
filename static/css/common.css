@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  color: #444;
+  color: #555;
   font-family: 'Droid Sans', sans-serif;
   margin: 0 auto;
   height: 100%;
@@ -87,7 +87,6 @@ h4 {
 }
 
 p {
-  color: #777;
   font-weight: 400;
   font-size: 0.9em;
   line-height: 2em;
@@ -123,7 +122,6 @@ blockquote:before {
 }
 
 ol, ul {
-  color: #777;
   font-weight: 400;
   font-size: 0.9em;
   line-height: 2em;
