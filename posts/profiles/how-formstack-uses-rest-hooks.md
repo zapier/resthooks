@@ -5,11 +5,9 @@ comments: false
 
 ### [Home](/) > {{ title }}
 
-<br/>
-
 <div class="quote">"We did notice a huge drop in the amount of server resources dedicated towards our API."</div>
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/vtHPK9k_UDk" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="//www.youtube.com/embed/vtHPK9k_UDk?color=white&theme=light&rel=0" frameborder="0" allowfullscreen></iframe>
 
 Formstack built their original API when their product launched but adoption was so-so and lots of developers were hitting rate-limits.
 

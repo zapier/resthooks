@@ -5,11 +5,9 @@ comments: false
 
 ### [Home](/) > {{ title }}
 
-<br/>
-
 <div class="quote">"We got to the point where polling would sometimes disrupt service."</div>
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/QDgcisDm9ZA" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="//www.youtube.com/embed/QDgcisDm9ZA?color=white&theme=light&rel=0" frameborder="0" allowfullscreen></iframe>
 
 ActiveCampaign has been committed to developers from the very beginning. They built their REST API 3-5 years ago to begin fostering a developer community and since then they've grown their platform to the point where load from API polling would sometimes disrupt service.
 

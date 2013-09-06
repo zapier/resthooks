@@ -3,9 +3,11 @@ author: Andreas Pedersen
 date: 2013-09-03
 comments: false
 
+### [Home](/) > {{ title }}
+
 <div class="quote">"Our partners can provision new customers much more efficiently. That's something our partners are very very happy about."</div>
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/uHfvAtUdrAo" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="//www.youtube.com/embed/uHfvAtUdrAo?color=white&theme=light&rel=0" frameborder="0" allowfullscreen></iframe>
 
 Podio built their original REST API right along side their product. Following modern product techniques, their frontend, iOS and Android apps all consume the exact same API that is exposed to 3rd party developers.
 
