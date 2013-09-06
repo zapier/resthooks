@@ -77,4 +77,4 @@ Now that you have the all the other pieces in place, the only thing left to do i
 
 We generally recommend some sort of delayed task implementation (we detail more [performance considerations here](/docs/performance/)) but in its simplest form inline hook delivery will get the job done.
 
-# Further Topical Readings
+## Further Topical Readings

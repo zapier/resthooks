@@ -64,20 +64,26 @@ h1 {
   margin-bottom: 20px;
 }
 
-h2 {
+/*h2 {
   font-size: 1.1em;
   line-height: 1.2em;
   margin: 0 0 20px;
   font-weight: normal;
+}*/
+
+h2 {
+  color: #444;
+  font-size: 19px;
+  letter-spacing: 1px;
+  word-spacing: -2px;
+  line-height: 1.75em;
+  margin-bottom: 10px;
+  font-weight: normal;
 }
 
 h3 {
-  font-size: 15px;
-  font-weight: normal;
-  letter-spacing: 1px;
-  line-height: 1.75em;
+  line-height: 1.5em;
   margin-bottom: 15px;
-  text-transform: uppercase;
 }
 
 h4 {
@@ -259,6 +265,7 @@ pre {
   line-height: 1em;
 }
 .pop h2 {
+  color: #FFD3E1;
   font-size: 14px;
   letter-spacing: 0.75px;
   word-spacing: -1px;
@@ -363,7 +370,7 @@ hr {
 }
 .index img {
   display: block;
-  width: 50%;
+  width: 80%;
   border: 0;
   background: none;
   margin: 0 auto 10px;
@@ -408,9 +415,6 @@ div.post a {
   color: #c23963;
 }
 
-.post h2 {
-  margin-top: 40px;
-}
 .post .quote {
   color: #c23963;
   font-size: 30px;
@@ -504,7 +508,13 @@ a.button {
 }
 
 a.button:hover {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.75);
   border-bottom: 0 none;
   color: #c23963;
+}
+
+a.button:active {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-bottom: 0 none;
+  color: #FFF;
 }
