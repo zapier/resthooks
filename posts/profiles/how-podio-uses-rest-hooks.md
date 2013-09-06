@@ -3,6 +3,8 @@ author: Andreas Pedersen
 date: 2013-09-03
 comments: false
 
+### [Home](/) > {{ title }}
+
 <div class="quote">"Our partners can provision new customers much more efficiently. That's something our partners are very very happy about."</div>
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/uHfvAtUdrAo" frameborder="0" allowfullscreen></iframe>

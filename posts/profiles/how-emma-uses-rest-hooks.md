@@ -5,8 +5,6 @@ comments: false
 
 ### [Home](/) > {{ title }}
 
-<br/>
-
 <div class="quote">"Web services would just come to a crawl because [partners] were doing 1000 requests per second."</div>
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/ZmLeOGDrwmU" frameborder="0" allowfullscreen></iframe>

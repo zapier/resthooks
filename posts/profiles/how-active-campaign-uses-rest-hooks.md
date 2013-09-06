@@ -5,8 +5,6 @@ comments: false
 
 ### [Home](/) > {{ title }}
 
-<br/>
-
 <div class="quote">"We got to the point where polling would sometimes disrupt service."</div>
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/QDgcisDm9ZA" frameborder="0" allowfullscreen></iframe>

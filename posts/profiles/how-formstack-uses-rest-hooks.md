@@ -5,8 +5,6 @@ comments: false
 
 ### [Home](/) > {{ title }}
 
-<br/>
-
 <div class="quote">"We did notice a huge drop in the amount of server resources dedicated towards our API."</div>
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/vtHPK9k_UDk" frameborder="0" allowfullscreen></iframe>
