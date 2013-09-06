@@ -7,7 +7,7 @@ comments: false
 
 <div class="quote">"Web services would just come to a crawl because [partners] were doing 1000 requests per second."</div>
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/ZmLeOGDrwmU" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="//www.youtube.com/embed/ZmLeOGDrwmU?color=white&theme=light&rel=0" frameborder="0" allowfullscreen></iframe>
 
 Emma got into the API space early. They've had some version of their API for almost 7 or 8 years now. Since then, the API landscape has changed dramatically.
 

@@ -7,7 +7,7 @@ comments: false
 
 <div class="quote">"We were having trouble with people who were basically calling this API ... every minute or even every 30 seconds."</div>
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/Gg1qmDY2RBg" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="//www.youtube.com/embed/Gg1qmDY2RBg?color=white&theme=light&rel=0" frameborder="0" allowfullscreen></iframe>
 
 Wufoo, like many others, has been in the API space a long time. They implemented their original non-REST APIs in 2008 and added their modern REST API about 3 years ago.
 
