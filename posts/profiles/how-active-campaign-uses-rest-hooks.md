@@ -1,13 +1,19 @@
 title: How ActiveCampaign Uses REST Hooks
-author: Matt Thommes
+author: Interview with Matt Thommes
 date: 2013-08-26
 comments: false
 
 ### [Home](/) > {{ title }}
 
-<div class="quote">"We got to the point where polling would sometimes disrupt service."</div>
+<div class="quote">We got to the point where polling would sometimes disrupt service.</div>
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/QDgcisDm9ZA?color=white&theme=light&rel=0" frameborder="0" allowfullscreen></iframe>
+
+## About ActiveCampaign
+
+ActiveCampaign is a portable, easy Email Marketing platform targeted at small and medium size businesses. Create email marketing and HTML newsletter campaigns in minutes. Powerful email marketing software features with free premium templates.
+
+## Case Study
 
 ActiveCampaign has been committed to developers from the very beginning. They built their REST API 3-5 years ago to begin fostering a developer community and since then they've grown their platform to the point where load from API polling would sometimes disrupt service.
 
@@ -80,7 +86,3 @@ If your hook endpoint returns a `410` response, then ActiveCampaign will automat
 [ActiveCampaign Home Page](http://www.activecampaign.com/)  
 [API Documentation](http://www.activecampaign.com/api)  
 [REST Hooks Documentation](http://www.activecampaign.com/api/webhooks.php)  
-
-## About ActiveCampaign
-
-ActiveCampaign is a portable, easy Email Marketing platform targeted at small and medium size businesses. Create email marketing and HTML newsletter campaigns in minutes. Powerful email marketing software features with free premium templates.

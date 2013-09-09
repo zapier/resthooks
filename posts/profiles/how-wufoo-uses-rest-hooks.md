@@ -1,13 +1,19 @@
 title: How Wufoo Uses REST Hooks
-author: Timothy Sabat
+author: Interview with Timothy Sabat
 date: 2013-08-26
 comments: false
 
 ### [Home](/) > {{ title }}
 
-<div class="quote">"We were having trouble with people who were basically calling this API ... every minute or even every 30 seconds."</div>
+<div class="quote">We were having trouble with people who were basically calling this API ... every minute or even every 30 seconds.</div>
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/Gg1qmDY2RBg?color=white&theme=light&rel=0" frameborder="0" allowfullscreen></iframe>
+
+## About Wufoo
+
+Wufoo's HTML form builder helps you create online web forms to power your contact forms, online surveys, event registrations, accept payments and more.
+
+## Case Study
 
 Wufoo, like many others, has been in the API space a long time. They implemented their original non-REST APIs in 2008 and added their modern REST API about 3 years ago.
 
@@ -89,7 +95,3 @@ Wufoo does not have any hook identifiers but they do include a timestamp. Additi
 [Wufoo Home Page](http://wufoo.com/)  
 [API Documentation](http://www.wufoo.com/docs/api/v3/)  
 [REST Hooks Documentation](http://www.wufoo.com/docs/api/v3/webhooks/)  
-
-## About Wufoo
-
-Wufoo's HTML form builder helps you create online web forms to power your contact forms, online surveys, event registrations, accept payments and more.

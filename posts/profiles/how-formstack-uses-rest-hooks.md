@@ -1,13 +1,19 @@
 title: How Formstack Uses REST Hooks
-author: Brandon Peters
+author: Interview with Brandon Peters
 date: 2013-08-27
 comments: false
 
 ### [Home](/) > {{ title }}
 
-<div class="quote">"We did notice a huge drop in the amount of server resources dedicated towards our API."</div>
+<div class="quote">We did notice a huge drop in the amount of server resources dedicated towards our API.</div>
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/vtHPK9k_UDk?color=white&theme=light&rel=0" frameborder="0" allowfullscreen></iframe>
+
+## About Formstack
+
+Formstack is an Online HTML Form Builder that lets you create all types of online forms. Build order forms, contact forms, registration forms, & online surveys.
+
+## Case Study
 
 Formstack built their original API when their product launched but adoption was so-so and lots of developers were hitting rate-limits.
 
@@ -73,7 +79,3 @@ Formstack requires you to specify wether you'd like skinny or fat payloads when 
 [Formstack Home Page](http://www.Formstack.com/)  
 [API Documentation](https://www.formstack.com/developers/api)  
 [REST Hooks Documentation](https://www.formstack.com/developers/webhooks)  
-
-## About Formstack
-
-Formstack is an Online HTML Form Builder that lets you create all types of online forms. Build order forms, contact forms, registration forms, & online surveys.

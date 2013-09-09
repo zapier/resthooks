@@ -419,7 +419,18 @@ div.post a {
   color: #c23963;
   font-size: 30px;
   line-height: 1.2em;
-  padding: 25px 20px 40px;
+  padding: 25px 20px 40px 50px;
+  position: relative;
+  font-style: italic;
+}
+.post .quote:before {
+  font-style: normal;
+  content: "\201c";
+  display: block;
+  font-size: 100px;
+  position: absolute;
+  top: 45px;
+  left: 0;
 }
 .post table {
   border: 1px solid #ccc;

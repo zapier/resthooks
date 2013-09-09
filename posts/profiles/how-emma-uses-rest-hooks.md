@@ -1,13 +1,19 @@
 title: How Emma Uses REST Hooks
-author: Alex Ezell
+author: Interview with Alex Ezell
 date: 2013-08-26
 comments: false
 
 ### [Home](/) > {{ title }}
 
-<div class="quote">"Web services would just come to a crawl because [partners] were doing 1000 requests per second."</div>
+<div class="quote">Web services would just come to a crawl because [partners] were doing 1000 requests per second.</div>
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/ZmLeOGDrwmU?color=white&theme=light&rel=0" frameborder="0" allowfullscreen></iframe>
+
+## About Emma
+
+Emma is an email marketing platform. With Emma you can design stylish email campaigns with easy-to-use features, send those campaigns to customers and collect statistics about how well they perform.
+
+## Case Study
 
 Emma got into the API space early. They've had some version of their API for almost 7 or 8 years now. Since then, the API landscape has changed dramatically.
 
@@ -75,7 +81,3 @@ Emma sends all their hooks as skinny payloads. This means the hook payload itsel
 [Emma Home Page](http://www.myemma.com/)  
 [API Documentation](http://api.myemma.com/api/)  
 [REST Hooks Documentation](http://api.myemma.com/api/external/webhooks.html)  
-
-## About Emma
-
-Emma is an email marketing platform. With Emma you can design stylish email campaigns with easy-to-use features, send those campaigns to customers and collect statistics about how well they perform.

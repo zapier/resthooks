@@ -1,13 +1,19 @@
 title: How Podio Uses REST Hooks
-author: Andreas Pedersen
+author: Interview with Andreas Pedersen
 date: 2013-09-03
 comments: false
 
 ### [Home](/) > {{ title }}
 
-<div class="quote">"Our partners can provision new customers much more efficiently. That's something our partners are very very happy about."</div>
+<div class="quote">Our partners can provision new customers much more efficiently. That's something our partners are very very happy about.</div>
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/uHfvAtUdrAo?color=white&theme=light&rel=0" frameborder="0" allowfullscreen></iframe>
+
+## About Podio
+
+Online work platform for collaboration and project management in one central place with tasks, calendar, contacts, activity stream and the ability to build business apps.
+
+## Case Study
 
 Podio built their original REST API right along side their product. Following modern product techniques, their frontend, iOS and Android apps all consume the exact same API that is exposed to 3rd party developers.
 
@@ -85,8 +91,4 @@ Podio sends along a webhook `id` which can be used to order incoming requests. E
 
 [Podio Home Page](http://podio.com/)  
 [API Documentation](https://developers.podio.com/doc)  
-[REST Hooks Documentation](https://developers.podio.com/doc/hooks)  
-
-## About Podio
-
-Online work platform for collaboration and project management in one central place with tasks, calendar, contacts, activity stream and the ability to build business apps.
+[REST Hooks Documentation](https://developers.podio.com/doc/hooks)
