@@ -48,7 +48,7 @@ On the downside, users might be a little overwhelmed with the complexities invol
 
 ## New protocol or specification
 
-There have been proposals for extending the HTTP specification itself with SUBSCRIBE and UNSUBSCRIBE methods (via WebDAV). Partially due to the fact that it wasn’t adopted into the core specifications, they have not caught on and only a handful of services implement it. Unfortunately, the red tape and bureaucracy involved to officially include subscription HTTP methods are prohibitive.
+There have been proposals for extending the HTTP specification itself with SUBSCRIBE and UNSUBSCRIBE methods (via WebDAV). Partially due to the fact that it wasn't adopted into the core specifications, they have not caught on and only a handful of services implement it. Unfortunately, the red tape and bureaucracy involved to officially include subscription HTTP methods are prohibitive.
 
 There have also been a handful of HTTP Subscription specifications that live within the existing HTTP specification itself. For example, using an X-Callback header to define callbacks during a POST to an /api/subscription endpoint. This closely approximates the REST Hooks ethos, with the minor variation in that the request body should define the subscription resource (just like the rest of your REST API).
 

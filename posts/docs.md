@@ -6,18 +6,19 @@ date: 2013-08-27
 
 1. [Security Best Practices](/docs/security/) patterns to verify intent and identity for hooks.
 2. [Performance Best Practices](/docs/performance/) patterns for ensure your code is performant.
-3. [Alternatives To REST Hooks](/docs/alternatives/) other real-time patterns in use around the web.
+3. [Delivery Failure & Retries](/docs/retries/) patterns to ensure delivery is complete.
+4. [Alternatives To REST Hooks](/docs/alternatives/) other real-time patterns in use around the web.
 
 
 ## What are REST Hooks? What are they not?
 
 REST Hooks itself is **not** a specification, it is a **collection of patterns** that treat webhooks like subscriptions. These subscriptions are manipulated via a REST API just like any other resource. That's it. Really.
 
-In this documentation you’ll find information on **creating the minimum implementation** as well as diving deeper into specific features that cover quite a few topics and their **best practices** within the pattern of REST Hooks. You can pick and choose from these topics and implement what makes sense for your API.
+In this documentation you'll find information on **creating the minimum implementation** as well as diving deeper into specific features that cover quite a few topics and their **best practices** within the pattern of REST Hooks. You can pick and choose from these topics and implement what makes sense for your API.
 
 ## Minimum Implementation Walkthrough
 
-To comply with the REST Hooks pattern, there is a minimum set of pieces you’ll need to add to have a working implementation. This article will outline those minimums:
+To comply with the REST Hooks pattern, there is a minimum set of pieces you'll need to add to have a working implementation. This article will outline those minimums:
 
 1. Mechanism to store subscriptions.
 2. Mechanism to modify subscriptions via API.
@@ -58,14 +59,14 @@ This is an improvement over manually managed webhooks URLs as it gives intereste
 
 ### List and implement event types.
 
-Next up would be enumerating and implementing each event type you’d like your REST Hooks subscription system to support. Each event type needs two things:
+Next up would be enumerating and implementing each event type you'd like your REST Hooks subscription system to support. Each event type needs two things:
 
 1. A name (use the noun.verb dot syntax, IE: contact.create or lead.delete).
 2. A payload template (simply mirror the representation from your standard API).
 
-For starters, we recommend create, update and delete events on your most popular resources. For example, if you had contact and deal resources, you’d define and implement contact.create, contact.update, contact.delete, deal.create, etc… events.
+For starters, we recommend create, update and delete events on your most popular resources. For example, if you had contact and deal resources, you'd define and implement contact.create, contact.update, contact.delete, deal.create, etc… events.
 
-The payload that you build for each record in your REST API would match exactly your API’s representation of the same object. That makes it easy to map REST resources to hook resources and vice versa.
+The payload that you build for each record in your REST API would match exactly your API's representation of the same object. That makes it easy to map REST resources to hook resources and vice versa.
 
 
 ### Mechanism to send hooks.

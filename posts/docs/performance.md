@@ -32,12 +32,12 @@ If you are using a synchronous programming language like PHP, Python, Ruby, etc�
 
 However, if you are using a language with asynchronous capabilities like Javascript, Go, etc… these actions can be pushed off onto the event loop or into a coroutine, which can be a great way to get non-blocking performance.
 
-The same can be done (with care) for other languages using threads (Zapier’s django-rest-hooks implementation does this by default in Python). But, you should probably look into using a message queue under these circumstances.
+The same can be done (with care) for other languages using threads (Zapier's django-rest-hooks implementation does this by default in Python). But, you should probably look into using a message queue under these circumstances.
 
 
 ### Cheap Hack (Using a SQL-based Queue) or Elegant and Scalable (Using a Proper Queue)
 
-Depending on your existing architecture, adding a delayed task execution for delivering hooks could be as simple as defining a new task for whatever queueing system you already have in place. On the other hand, it may require additional infrastructure (like adding Redis, ActiveMQ, RabbitMQ, or Gearman). If adding another piece of tech isn’t an option, you could always implement a queue via a database table and some cron jobs (this doesn’t scale very well, but does work!).
+Depending on your existing architecture, adding a delayed task execution for delivering hooks could be as simple as defining a new task for whatever queueing system you already have in place. On the other hand, it may require additional infrastructure (like adding Redis, ActiveMQ, RabbitMQ, or Gearman). If adding another piece of tech isn't an option, you could always implement a queue via a database table and some cron jobs (this doesn't scale very well, but does work!).
 
 Most languages have libraries to handle task queues making this very easy (besides, task queues themselves are good practices).
 
@@ -55,7 +55,7 @@ Because step 4 and 5 are moved into a task that is running in the background, it
 
 ## Batching
 
-Sending a large number of hooks at the same time for very similar or duplicate events is a behavior that may be unwanted. For example, if a user makes a dozen fast edits to a single record, a naive implementation would send a dozen “item updated” event hooks. This example also illustrates the importance of delivery order: if the most recent event isn’t the last one received, the client’s state will be incorrect.
+Sending a large number of hooks at the same time for very similar or duplicate events is a behavior that may be unwanted. For example, if a user makes a dozen fast edits to a single record, a naive implementation would send a dozen “item updated” event hooks. This example also illustrates the importance of delivery order: if the most recent event isn't the last one received, the client's state will be incorrect.
 
 Another example is when a user does a mass edit or import task that touches hundreds, thousands or even *millions* of records. A naive implementation would simply attempt to do an equal number of hooks.
 
@@ -69,7 +69,7 @@ Both options can add quite a bit of overhead due to the nature of event aggregat
 
 ## Skinny Payloads
 
-Another option (especially within the context of massive batching or special systems like file syncing) would be sending more lightweight payloads. The most extreme would be the unique ID for the changed resource, on the other end of the spectrum, you’d send an entire snapshot of the newly changed resource.
+Another option (especially within the context of massive batching or special systems like file syncing) would be sending more lightweight payloads. The most extreme would be the unique ID for the changed resource, on the other end of the spectrum, you'd send an entire snapshot of the newly changed resource.
 
 A skinny payload has two general benefits for performance:
 

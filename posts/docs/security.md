@@ -7,7 +7,7 @@ date: 2013-08-27
 
 ## Use Existing API Authentication
 
-The first step to a secure REST Hook implementation is the make use of the existing authentication mechanism for the Sender’s API. When setting up the subscription, the API calls to do the handshake should include the standard authentication mechanism (Basic Auth, API key, OAuth access token, etc...).
+The first step to a secure REST Hook implementation is the make use of the existing authentication mechanism for the Sender's API. When setting up the subscription, the API calls to do the handshake should include the standard authentication mechanism (Basic Auth, API key, OAuth access token, etc...).
 
 
 ## Identity Confirmation
@@ -15,11 +15,11 @@ The first step to a secure REST Hook implementation is the make use of the exist
 To ensure that a Receiver actually intends to receive hooks from a Sender and that the hooks are really from the Sender, it is often wise to have some checks in place to confirm both intent and legitimacy.
 
 
-### Confirming Receiver’s Intent to Subscribe
+### Confirming Receiver's Intent to Subscribe
 
 To ensure that a Receiver actually intends to receive hooks from a Sender, a subscription uses a temporary secret in the initial handshake.
 
-When the Sender responds to the Receiver’s first POST request, the response includes a `X-Hook-Secret` header that has a unique string as its value. A unique value should be computed for each new subscription.
+When the Sender responds to the Receiver's first POST request, the response includes a `X-Hook-Secret` header that has a unique string as its value. A unique value should be computed for each new subscription.
 
 Upon receiving the secret from the Sender, the Receiver needs to do one of two things:
 
