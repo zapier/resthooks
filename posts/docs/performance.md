@@ -55,7 +55,7 @@ Because step 4 and 5 are moved into a task that is running in the background, it
 
 ## Batching
 
-Sending a large number of hooks at the same time for very similar or duplicate events is a behavior that may be unwanted. For example, if a user makes a dozen fast edits to a single record, a naive implementation would send a dozen “item updated” event hooks. This example also illustrates the importance of delivery order: if the most recent event isn't the last one received, the client's state will be incorrect.
+Sending a large number of hooks at the same time for very similar or duplicate events is a behavior that may be unwanted. For example, if a user makes a dozen fast edits to a single record, a naive implementation would send a dozen "item updated" event hooks. This example also illustrates the importance of delivery order: if the most recent event isn't the last one received, the client's state will be incorrect.
 
 Another example is when a user does a mass edit or import task that touches hundreds, thousands or even *millions* of records. A naive implementation would simply attempt to do an equal number of hooks.
 

@@ -47,5 +47,5 @@ For each message, the Sender signs the message by computing an HMAC of the share
 
 ## Skinny Payloads
 
-Another way to secure messages is to replace the payload with a URL or unique ID for the resource rather than a full representation of the resource. Under this paradigm, the hook acts more like a “notification,” telling the Receiver to make the necessary API calls to complete the transaction. The benefit of this approach is that the Receiver must make an authenticated API call to obtain data, so access can be regulated via normal means.
+Another way to secure messages is to replace the payload with a URL or unique ID for the resource rather than a full representation of the resource. Under this paradigm, the hook acts more like a "notification," telling the Receiver to make the necessary API calls to complete the transaction. The benefit of this approach is that the Receiver must make an authenticated API call to obtain data, so access can be regulated via normal means.
 

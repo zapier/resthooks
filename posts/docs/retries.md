@@ -39,7 +39,7 @@ If the receiver is down and misses the first create message, receiving the updat
 
 One solution is to have each message include a sequence ID of some sort. This would mean it is up to the receiver to implement a [resequencer](http://www.enterpriseintegrationpatterns.com/Resequencer.html) to put hooks received out of order back in order and reduces the overhead on the sender'''s side.
 
-Another solution is to not include a full representation, but instead a single unique ID for the underlying resource. In this scenario, the receiver can make the assumption that it can manually fetch the most recent version of the resource, making the actual event type or payload content of lesser importance (IE: an “item created” hook with an ID that gives a 404 when fetched indicates to the Receiver the item was later deleted).
+Another solution is to not include a full representation, but instead a single unique ID for the underlying resource. In this scenario, the receiver can make the assumption that it can manually fetch the most recent version of the resource, making the actual event type or payload content of lesser importance (IE: an "item created" hook with an ID that gives a 404 when fetched indicates to the Receiver the item was later deleted).
 
 
 ## Variation: Claim Check
