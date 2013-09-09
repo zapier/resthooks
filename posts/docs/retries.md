@@ -1,4 +1,4 @@
-title: Retries
+title: Delivery Failure & Retries
 author: Zapier
 date: 2013-08-27
 

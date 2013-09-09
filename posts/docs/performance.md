@@ -5,9 +5,9 @@ date: 2013-08-27
 
 ### [Home](/) > [Docs](/docs/) > {{ title }}
 
-Properly implemented and adopted, REST Hooks can result in ~66x load reduction on API servers (based on comparing polling vs. webhook implementations within Zapier).
+Properly implemented and adopted, REST Hooks can result in 66x load reduction on API servers (based on comparing polling vs. webhook implementations within Zapier).
 
-However, the architecture required to run REST Hooks can break away from a standard setup for a simple CRUD app, which can have only HTTP and database servers. This article will cover basic patterns to work within this architecture and ways to extend architecture to better suit hook delivery.
+The architecture required to run REST Hooks, however, can break away from a standard setup for a simple CRUD app, which can have only HTTP and database servers. This article will cover basic patterns to work within this architecture and ways to extend architecture to better suit hook delivery.
 
 You have three options (all outlined below in more details)
 
@@ -22,15 +22,15 @@ The primary consideration is the hook delivery mechanism. This encapsulates both
 
 A simplistic implementation might just do the following any time an event might be triggered:
 
-1. An event is triggered by a user.
-2. Look up any existing subscriptions for the particular event and user.
-3. Loop over existing subscriptions and POST the payload (very slow).
-4. Perform any cleanup, failure, or retry logic.
-5. Return a response to the user.
+1. An event is triggered by a user
+2. Look up any existing subscriptions for the particular event and user
+3. Loop over existing subscriptions and POST the payload (very slow)
+4. Perform any cleanup, failure, or retry logic
+5. Return a response to the user
 
-If you are using a synchronous programming language like PHP, Python, Ruby, etc… these actions can block. If your user is saving a form to edit the underlying record triggering the event and has a handful of subscriptions, this can delay the response by several seconds or more!
+If you are using a synchronous programming language like PHP, Python, Ruby, etc. these actions can block. If your user is saving a form to edit the underlying record triggering the event and has a handful of subscriptions, this can delay the response by several seconds or more!
 
-However, if you are using a language with asynchronous capabilities like Javascript, Go, etc… these actions can be pushed off onto the event loop or into a coroutine, which can be a great way to get non-blocking performance.
+However, if you are using a language with asynchronous capabilities like Javascript, Go, etc. these actions can be pushed off onto the event loop or into a coroutine, which can be a great way to get non-blocking performance.
 
 The same can be done (with care) for other languages using threads (Zapier's django-rest-hooks implementation does this by default in Python). But, you should probably look into using a message queue under these circumstances.
 
@@ -43,12 +43,12 @@ Most languages have libraries to handle task queues making this very easy (besid
 
 The basic idea is:
 
-1. An event is triggered by a user.
-2. Insert a task to deliver hooks for the event and user (very fast).
-3. Return a response to the user.
-4. (Inside the task) Look up any existing subscriptions for the particular event and user.
-5. (Inside the task) Loop over existing subscriptions and POST the payload (very slow).
-6. (Inside the task) Perform any cleanup, failure, or retry logic.
+1. An event is triggered by a user
+2. Insert a task to deliver hooks for the event and user (very fast)
+3. Return a response to the user
+4. (Inside the task) Look up any existing subscriptions for the particular event and user
+5. (Inside the task) Loop over existing subscriptions and POST the payload (very slow)
+6. (Inside the task) Perform any cleanup, failure, or retry logic
 
 Because step 4 and 5 are moved into a task that is running in the background, it no longer blocks our response to the user. This maintains a high level of responsiveness for the user, increases likeliness of task success (especially when isolating and fanning out new tasks for each event and subscription) and parallelizes tasks, delivering them faster.
 
@@ -73,5 +73,5 @@ Another option (especially within the context of massive batching or special sys
 
 A skinny payload has two general benefits for performance:
 
-1. Less outbound bandwidth consumed for delivering payloads.
-2. Less internal resources consumed to process payloads.
+1. Less outbound bandwidth consumed for delivering payloads
+2. Less internal resources consumed to process payloads

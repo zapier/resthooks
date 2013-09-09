@@ -7,7 +7,12 @@ date: 2013-08-27
 
 ## Use Existing API Authentication
 
-The first step to a secure REST Hook implementation is the make use of the existing authentication mechanism for the Sender's API. When setting up the subscription, the API calls to do the handshake should include the standard authentication mechanism (Basic Auth, API key, OAuth access token, etc...).
+The first step to a secure REST Hook implementation is to make use of the existing authentication mechanism for the Sender's API. When setting up the subscription, the API calls to do the handshake should include the standard authentication mechanism (Basic Auth, API key, OAuth access token, etc.).
+
+There are two broad patterns to ensure the integrity of your hooks:
+
+1. Be very careful who is allowed to receive hooks (indentity confirmation, signatures, etc.)
+2. Don't send any sensitive information at all (notification only, skinny payloads)
 
 
 ## Identity Confirmation

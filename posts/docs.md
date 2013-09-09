@@ -4,10 +4,10 @@ date: 2013-08-27
 
 ## Links
 
-1. [Security Best Practices](/docs/security/) patterns to verify intent and identity for hooks.
-2. [Performance Best Practices](/docs/performance/) patterns for ensure your code is performant.
-3. [Delivery Failure & Retries](/docs/retries/) patterns to ensure delivery is complete.
-4. [Alternatives To REST Hooks](/docs/alternatives/) other real-time patterns in use around the web.
+1. [Security Best Practices](/docs/security/) - Patterns to verify intent and identity for hooks
+2. [Performance Best Practices](/docs/performance/) - Patterns for ensure your code is performant
+3. [Delivery Failure & Retries](/docs/retries/) - Patterns to ensure delivery is complete
+4. [Alternatives to REST Hooks](/docs/alternatives/) - Other real-time patterns in use around the web
 
 
 ## What are REST Hooks? What are they not?
@@ -20,27 +20,27 @@ In this documentation you'll find information on **creating the minimum implemen
 
 To comply with the REST Hooks pattern, there is a minimum set of pieces you'll need to add to have a working implementation. This article will outline those minimums:
 
-1. Mechanism to store subscriptions.
-2. Mechanism to modify subscriptions via API.
-3. List and implement event types.
-4. Mechanism to send hooks.
+1. Mechanism to store subscriptions
+2. Mechanism to modify subscriptions via API
+3. List and implement event types
+4. Mechanism to send hooks
 
 Retries, intent and identity verification, batching and other components are optional and vary wildly between implementations.
 
 
-### Mechanism to store subscriptions.
+### Mechanism to store subscriptions
 
 Highly dependent on your database selection, this first requirement is the foundation by which the subscriptions are managed. At the most basic level, a persisted subscription only really needs the following fields:
 
-1. An event name or names the subscription includes.
-2. A parent user or account relationship.
-3. A target URL to send the payloads.
-4. (optional) Active vs. inactive state (add link to security).
+1. An event name or names the subscription includes
+2. A parent user or account relationship
+3. A target URL to send the payloads
+4. (optional) Active vs. inactive state (add link to security)
 
 It is wise to make sure you index both the event and user relationship so subscription lookups are performant.
 
 
-### Mechanism to modify subscriptions via API.
+### Mechanism to modify subscriptions via API
 
 Also dependent on your API implementation, this allows anyone with normal API access to manipulate their subscriptions like any other resource on your API. For example, if you already have a REST API, the most common and logical solution is another resource:
 
@@ -69,7 +69,7 @@ For starters, we recommend create, update and delete events on your most popular
 The payload that you build for each record in your REST API would match exactly your API's representation of the same object. That makes it easy to map REST resources to hook resources and vice versa.
 
 
-### Mechanism to send hooks.
+### Mechanism to send hooks
 
 Now that you have the all the other pieces in place, the only thing left to do is add the actual mechanism to POST or otherwise deliver the payload for each event to the proper target URL for each matching subscription. 
 
@@ -77,5 +77,3 @@ Now that you have the all the other pieces in place, the only thing left to do i
 2. Handling responses like 410 Gone and optionally retrying connection or other 4xx/5xx errors. 
 
 We generally recommend some sort of delayed task implementation (we detail more [performance considerations here](/docs/performance/)) but in its simplest form inline hook delivery will get the job done.
-
-## Further Topical Readings
