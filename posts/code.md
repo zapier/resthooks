@@ -23,4 +23,11 @@ This [Rails library](https://github.com/net-engine/resthooks) offers a similarly
 
 ## Node.js/Sails
 
-James, you need to provide me.
+[This application](https://github.com/zapier/node-resthooksdemo)
+provides a demonstration of using RESTHooks in conjunction with a
+[Sails](http://sailsjs.org/#!)
+based CRM application that leverages Waterline ORM's Lifecycle Callbacks
+to notify subscriptions. You can find the relevant documentation to get
+started
+[here](https://github.com/zapier/node-resthooksdemo/blob/master/README.md).
+
