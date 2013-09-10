@@ -2,14 +2,6 @@ title: Documentation
 author: Zapier
 date: 2013-08-27
 
-## Links
-
-1. [Security Best Practices](/docs/security/) - Patterns to verify intent and identity for hooks
-2. [Performance Best Practices](/docs/performance/) - Patterns for ensure your code is performant
-3. [Delivery Failure & Retries](/docs/retries/) - Patterns to ensure delivery is complete
-4. [Alternatives to REST Hooks](/docs/alternatives/) - Other real-time patterns in use around the web
-
-
 ## What are REST Hooks? What are they not?
 
 REST Hooks itself is **not** a specification, it is a **collection of patterns** that treat webhooks like subscriptions. These subscriptions are manipulated via a REST API just like any other resource. That's it. Really.
@@ -77,3 +69,12 @@ Now that you have the all the other pieces in place, the only thing left to do i
 2. Handling responses like 410 Gone and optionally retrying connection or other 4xx/5xx errors. 
 
 We generally recommend some sort of delayed task implementation (we detail more [performance considerations here](/docs/performance/)) but in its simplest form inline hook delivery will get the job done.
+
+## Other Topics
+
+1. [Security Best Practices](/docs/security/) - Patterns to verify intent and identity for hooks
+2. [Performance Best Practices](/docs/performance/) - Patterns for ensure your code is performant
+3. [Delivery Failure & Retries](/docs/retries/) - Patterns to ensure delivery is complete
+4. [Alternatives to REST Hooks](/docs/alternatives/) - Other real-time patterns in use around the web
+
+
