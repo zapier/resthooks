@@ -114,7 +114,7 @@ create event it may consider the resource as having just been created.
 
 One solution is to have each message include a sequence ID of some sort.
 This would mean that it is up to the Receiver to implement a
-[resequencer](http://www.enterpriseintegrationpatterns.com/Resequencer.html)
+[Resequencer](http://www.enterpriseintegrationpatterns.com/Resequencer.html)
 to put hooks received out of order back in the correct order.
 
 ### Variation: Claim Check
