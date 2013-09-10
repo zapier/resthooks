@@ -533,3 +533,8 @@ a.button:active {
 .icon-check-sign.success {
   color: #46a546;
 }
+
+.teaser {
+  width:400px;
+  margin:0 auto;
+}
