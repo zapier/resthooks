@@ -1,6 +1,6 @@
 title: How Zapier Uses REST Hooks
 author: Mike Knoop
-date: 2013-08-26
+date: 2013-09-09
 comments: false
 
 ### [Home](/) > {{ title }}
