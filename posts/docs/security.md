@@ -5,6 +5,8 @@ date: 2013-08-27
 
 ### [Home](/) > [Docs](/docs/) > {{ title }}
 
+Security in REST Hooks takes a slightly different approach than typical API access. While the security mechanisms described below can still use your existing authentication process, there are some extra steps that can be taken to ensure a completely secure channel.
+
 ## Use Existing API Authentication
 
 The first step to a secure REST Hook implementation is to make use of the existing authentication mechanism for the Sender's API. When setting up the subscription, the API calls to do the handshake should include the standard authentication mechanism (Basic Auth, API key, OAuth access token, etc.).
