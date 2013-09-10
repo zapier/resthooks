@@ -54,7 +54,7 @@ timeout fall into unforseen circumstances and should be retried as well.
   </tr>
   <tr>
     <td>4xx</td>
-    <td><i class="icon-check-sign"></i></td>
+    <td><i class="icon-check-sign success"></i></td>
   </tr>
   <tr>
     <td>410</td>
@@ -62,11 +62,11 @@ timeout fall into unforseen circumstances and should be retried as well.
   </tr>
   <tr>
     <td>5xx</td>
-    <td><i class="icon-check-sign"></i></td>
+    <td><i class="icon-check-sign success"></i></td>
   </tr>
   <tr>
     <td>Timed Out</td>
-    <td><i class="icon-check-sign"></i></td>
+    <td><i class="icon-check-sign success"></i></td>
   </tr>
 </table>
 
