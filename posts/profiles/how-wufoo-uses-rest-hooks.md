@@ -17,7 +17,7 @@ Wufoo's HTML form builder helps you create online web forms to power your contac
 
 Wufoo, like many others, has been in the API space a long time. They implemented their original non-REST APIs in 2008 and added their modern REST API about 3 years ago.
 
-REST hooks were added to the Wufoo API as part of an integrations push once they realized there was a lot of value for them to "cut out the polling middle man."
+REST Hooks were added to the Wufoo API as part of an integrations push once they realized there was a lot of value for them to "cut out the polling middle man."
 
 Wufoo is form software and the most common integration is putting the form data into another system. Classically, the only way to detect new form submissions was through polling.
 
@@ -25,9 +25,9 @@ Additionally, MySQL counts were a very expensive of generating an API response. 
 
 Wufoo had a "huge offenders list" and had to implement more strict API rate limitting so their level of service wouldn't be degraded across the board. But they didn't want to just take something away. Wufoo decided to offer hooks as the obvious alternative for developers who were overloading their servers via polling.
 
-The other big part of REST hooks is the subscription mechanism. Wufoo had a lot of big partners telling them they wanted to see their logo listed inside Wufoo's API. But Wufoo did not want to build one-off integrations with all these various services. So they built the subscription mechanism such that when developers registered a REST hook, their app's logo was automatically shown inside Wufoo as an available service to send data to.
+The other big part of REST Hooks is the subscription mechanism. Wufoo had a lot of big partners telling them they wanted to see their logo listed inside Wufoo's API. But Wufoo did not want to build one-off integrations with all these various services. So they built the subscription mechanism such that when developers registered a REST hook, their app's logo was automatically shown inside Wufoo as an available service to send data to.
 
-Let's take a look at the details about how Wufoo uses REST hooks.
+Let's take a look at the details about how Wufoo uses REST Hooks.
 
 <table>
   <tr>
@@ -70,9 +70,9 @@ Let's take a look at the details about how Wufoo uses REST hooks.
 
 ## REST Hooks
 
-Wufoo originally offers hooks in several areas of their product. They have a user-facing interface to define hook callbacks and they also have a REST API which can be used to programmatically subscribe (ie. REST hooks).
+Wufoo originally offers hooks in several areas of their product. They have a user-facing interface to define hook callbacks and they also have a REST API which can be used to programmatically subscribe (ie. REST Hooks).
 
-Once a hook has been subscribed to a specific form or user, the user can log in to Wufoo and choose more forms to send to the service that subscribed. This is one of the unique things about Wufoo's REST hooks.
+Once a hook has been subscribed to a specific form or user, the user can log in to Wufoo and choose more forms to send to the service that subscribed. This is one of the unique things about Wufoo's REST Hooks.
 
 ## Identitiy Verifications
 

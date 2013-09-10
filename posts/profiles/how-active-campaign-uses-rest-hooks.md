@@ -17,9 +17,9 @@ ActiveCampaign is a portable, easy Email Marketing platform targeted at small an
 
 ActiveCampaign has been committed to developers from the very beginning. They built their REST API 3-5 years ago to begin fostering a developer community and since then they've grown their platform to the point where load from API polling would sometimes disrupt service.
 
-About a year ago, ActiveCampaign implemented REST hooks. Their server load has been reduced and they get fewer support tickets regarding polling.
+About a year ago, ActiveCampaign implemented REST Hooks. Their server load has been reduced and they get fewer support tickets regarding polling.
 
-Let's take a look at how exactly ActiveCampaign uses REST hooks.
+Let's take a look at how exactly ActiveCampaign uses REST Hooks.
 
 <table>
   <tr>

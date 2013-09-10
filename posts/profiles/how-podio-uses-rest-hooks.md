@@ -17,15 +17,15 @@ Online work platform for collaboration and project management in one central pla
 
 Podio built their original REST API right along side their product. Following modern product techniques, their frontend, iOS and Android apps all consume the exact same API that is exposed to 3rd party developers.
 
-Even at the beginning, Podio was looking to scale: they implemented REST hooks and rate limitting with an eye towards the future.
+Even at the beginning, Podio was looking to scale: they implemented REST Hooks and rate limitting with an eye towards the future.
 
-Some of Podio's most useful endpoints are those with filters which also happen to be the most expensive to generate. REST hooks workaround this limitation. They enable both the data developers want as well as lighter server load.
+Some of Podio's most useful endpoints are those with filters which also happen to be the most expensive to generate. REST Hooks workaround this limitation. They enable both the data developers want as well as lighter server load.
 
-REST hooks (subscription webhooks) actually happened accidentally. Because all of Podio's frontends consume the same API, REST hooks were a necessity for dogfooding.
+REST Hooks (subscription webhooks) actually happened accidentally. Because all of Podio's frontends consume the same API, REST Hooks were a necessity for dogfooding.
 
 In time they learned this was a great decision after hearing from elated partners and 3rd party developers.
 
-Let's take a look at the details about how Podio uses REST hooks.
+Let's take a look at the details about how Podio uses REST Hooks.
 
 <table>
   <tr>
@@ -68,7 +68,7 @@ Let's take a look at the details about how Podio uses REST hooks.
 
 ## REST Hooks
 
-Podio REST hooks can actually be created in one of two ways. They can be created as classic REST hooks programatically via the REST API or the user can define webhooks within Podio's developer tools.
+Podio REST Hooks can actually be created in one of two ways. They can be created as classic REST Hooks programatically via the REST API or the user can define webhooks within Podio's developer tools.
 
 Following Podio's flexible model, there are several "nouns" and "verbs" you can subscribe to which are documented [here](https://developers.podio.com/doc/hooks).
 

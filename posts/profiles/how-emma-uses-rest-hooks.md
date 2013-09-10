@@ -19,15 +19,15 @@ Emma got into the API space early. They've had some version of their API for alm
 
 Their original SOAP version was replaced a few years ago with a modern REST API. Only a few months after launching their REST API, they added REST hook support based on initial feedback.
 
-Over the last year or so, they've expanded their webhook coverage significantly. The biggest advantages of REST hooks for Emma is how granular and simple they are.
+Over the last year or so, they've expanded their webhook coverage significantly. The biggest advantages of REST Hooks for Emma is how granular and simple they are.
 
 Hooks allow Emma to avoid complex integrations with partners. Before, integrations with partners would take months and Emma would spend a lot of time guiding developers through setting up polling infrastructure and other details.
 
-With REST hooks, Emma can point to their lighter weight, more granular hook based system for getting at very specific information, like email bounces.
+With REST Hooks, Emma can point to their lighter weight, more granular hook based system for getting at very specific information, like email bounces.
 
-Emma targets small and medium size companies which often don't have dedicated IT teams or people with domain knowledge about APIs. REST hooks dramatically simplify how much time and effort they need to put into 3rd party developer support.
+Emma targets small and medium size companies which often don't have dedicated IT teams or people with domain knowledge about APIs. REST Hooks dramatically simplify how much time and effort they need to put into 3rd party developer support.
 
-Let's take a look at how Emma uses REST hooks.
+Let's take a look at how Emma uses REST Hooks.
 
 <table>
   <tr>

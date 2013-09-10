@@ -21,7 +21,7 @@ While refreshing their API to be more usable about a year ago, the Formstack tea
 
 Even better, after adopting REST Hooks they saw a significant drop in the amount of server resources needed to power their API, giving them improved performance to go with the improved user experience.
 
-Let's take a look at how exactly Formstack uses REST hooks.
+Let's take a look at how exactly Formstack uses REST Hooks.
 
 <table>
   <tr>
@@ -64,7 +64,7 @@ Let's take a look at how exactly Formstack uses REST hooks.
 
 ## REST Hooks
 
-Formstack is a classic example of REST hooks. They have a REST componenet to subscibe, access and unsubscribe from hooks. Addionally, they offer many toggles which can be used to make REST hooks more secure from the receiver's point of view.
+Formstack is a classic example of REST Hooks. They have a REST componenet to subscibe, access and unsubscribe from hooks. Addionally, they offer many toggles which can be used to make REST Hooks more secure from the receiver's point of view.
 
 ## Identity Verification
 
