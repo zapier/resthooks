@@ -2,7 +2,7 @@ title: Documentation
 author: Zapier
 date: 2013-08-27
 
-### [Home](/) > {{ title }}
+### [Home](/) > Docs
 
 ## What are REST Hooks? What are they not?
 
