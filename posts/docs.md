@@ -35,7 +35,7 @@ Highly dependent on your database selection, this first requirement is the found
 1. An event name or names the subscription includes
 2. A parent user or account relationship
 3. A target URL to send the payloads
-4. (optional) Active vs. inactive state (add link to security)
+4. (optional) Active vs. inactive state ([read more about security](/docs/security/))
 
 It is wise to make sure you index both the event and user relationship so subscription lookups are performant.
 
