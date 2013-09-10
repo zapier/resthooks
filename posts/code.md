@@ -18,7 +18,7 @@ It also comes with a [live CRM demo application](http://demo.resthooks.org/) ([c
 
 ## Ruby/Rails
 
-This [Rails library](https://github.com/net-engine/resthooks) offers a similarly simple sample application for Ruby on Rails that you can use when designing your application. It also has a [live demo application for testing](http://resthooks.herokuapp.com/).
+This [Rails library](https://github.com/net-engine/resthooks) offers a similarly simple sample application for Ruby on Rails that you can use when designing your application.
 
 
 ## Node.js/Sails
