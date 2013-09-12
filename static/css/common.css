@@ -535,6 +535,6 @@ a.button:active {
 }
 
 .teaser {
-  width:558px;
+  max-width:558px;
   margin:0 auto;
 }
