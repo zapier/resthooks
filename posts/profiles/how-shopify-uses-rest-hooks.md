@@ -15,7 +15,7 @@ Shopify is a powerful ecommerce website solution that allows you to sell online 
 
 ## Case Study
 
-Shopify launches their original API in 2006 in response to developers wanting to integrate with their Shopify online stores. Shopify is a Ruby on Rails shop which made it easy to spin up their original API.
+Shopify launches their original API in 2009 in response to developers wanting to integrate with their Shopify online stores. Shopify is a Ruby on Rails shop which made it easy to spin up their original API.
 
 REST Hooks were added after the original launch. Ecommerce is very real-time so an API that developers had to poll against was a serious drawback. Additionally, because so many Shopify customers are not developers, it had to be very user friendly to set up hook subscriptions. This is what REST Hooks offers.
 
