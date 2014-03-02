@@ -13,7 +13,7 @@ The first step to a secure REST Hook implementation is to make use of the existi
 
 There are two broad patterns to ensure the integrity of your hooks:
 
-1. Be very careful who is allowed to receive hooks (indentity confirmation, signatures, etc.)
+1. Be very careful who is allowed to receive hooks (identity confirmation, signatures, etc.)
 2. Don't send any sensitive information at all (notification only, skinny payloads)
 
 
