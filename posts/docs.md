@@ -65,7 +65,7 @@ The payload that you build for each record in your REST API would match exactly 
 
 ### Mechanism to send hooks
 
-Now that you have the all the other pieces in place, the only thing left to do is add the actual mechanism to POST or otherwise deliver the payload for each event to the proper target URL for each matching subscription. 
+Now that you have all the other pieces in place, the only thing left to do is add the actual mechanism to POST or otherwise deliver the payload for each event to the proper target URL for each matching subscription. 
 
 1. Compiling and POSTing the combined payload for the triggering resource and hook resource.
 2. Handling responses like 410 Gone and optionally retrying connection or other 4xx/5xx errors. 
