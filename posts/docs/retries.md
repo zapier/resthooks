@@ -35,7 +35,7 @@ resource is no longer available. Again, it is all up to the Sender to
 decide how this is handled.
 
 Since response status codes in the 5xx range always indicate an internal
-failure some sort a retry should definitely be scheduled when they
+failure of some sort, a retry should definitely be scheduled when they
 occur. Likewise, a network issue such as a connection reset or connection
 timeout fall into unforeseen circumstances and should be retried, as well.
 
