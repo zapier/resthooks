@@ -14,7 +14,7 @@ The real-time web is already here, but REST APIs haven't kept up. Many major pla
 
 For more information, code examples, libraries, and company profiles check out [http://resthooks.org](http://resthooks.org).
 
-[http://resthooks.org](http://resthooks.org) an initiative by [Zapier](https://zapier.com) 2013.
+[http://resthooks.org](http://resthooks.org) an initiative by [Zapier](https://zapier.com) 2013-2017.
 
 ## How to run locally.
 
