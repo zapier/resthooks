@@ -1,3 +1,5 @@
+_This project is no longer maintained. If you are interested in taking over the project, email [contact@zapier.com](mailto:contact@zapier.com)._
+
 ```
   _____   ______   _____  _______  _    _   ____    ____   _  __  _____    ____   _____    _____ 
  |  __ \ |  ____| / ____||__   __|| |  | | / __ \  / __ \ | |/ / / ____|  / __ \ |  __ \  / ____|
