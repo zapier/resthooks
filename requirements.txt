@@ -1,7 +1,7 @@
 Flask==0.12
 Flask-FlatPages==0.3
 houdini.py==0.1.0
-Jinja2==2.6
+Jinja2==2.10
 misaka==1.0.2
 pygments==1.6
 simplejson==2.6.2
