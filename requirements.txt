@@ -5,4 +5,4 @@ Jinja2==2.6
 misaka==1.0.2
 pygments==1.6
 simplejson==2.6.2
-gunicorn==17.5
+gunicorn==19.9
