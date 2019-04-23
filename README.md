@@ -28,7 +28,7 @@ Next, you'll want to make a virtual environment (we recommend using
 virtualenvwrapper but you could skip this) and then install dependencies:
 
 ```
-mkvirtualenv resthooks
+mkvirtualenv resthooks -p python2.7
 pip install -r requirements.txt
 ```
 
