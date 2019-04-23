@@ -1,4 +1,4 @@
-Flask==0.9
+Flask==0.12
 Flask-FlatPages==0.3
 houdini.py==0.1.0
 Jinja2==2.6
