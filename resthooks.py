@@ -39,10 +39,6 @@ GLOBAL_CONTEXT = {
 def index():
     return render_template('index.html', **GLOBAL_CONTEXT)
 
-@app.route('/static/<path:filename>')
-def static(filename):
-    return send_from_directory(ROOT + app.config['STATIC_URL'], filename)
-
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(ROOT + app.config['STATIC_URL'], 'favicon.ico')
